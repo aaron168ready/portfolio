@@ -20,5 +20,6 @@ import { BackgroundComponent } from '../../components/section/projects/projects'
   templateUrl: 'portfolio-landing.html',
 })
 export class PortfolioLandingComponent {
+  linkedinUrl = 'https://linkedin.com/in/zni';
   githubUrl = 'https://github.com/aaron168ready';
 }

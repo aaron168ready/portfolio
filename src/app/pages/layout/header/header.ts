@@ -7,5 +7,6 @@ import { Component, input, signal } from '@angular/core';
 })
 export class HeaderComponent {
   mobileOpen = signal(false);
+  linkedinUrl = input<string>('https://linkedin.com/in/zni');
   githubUrl = input<string>('https://github.com/aaron168ready');
 }
