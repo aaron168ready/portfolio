@@ -1,0 +1,32 @@
+<section id="experience" class="mx-auto max-w-6xl px-4 py-14">
+  <h2 class="text-2xl font-semibold tracking-tight">Experience</h2>
+  <p class="mt-2 text-zinc-300">
+    Roles where I shipped production features, led teams, and improved systems.
+  </p>
+
+  <div class="mt-8 grid gap-4">
+    @for (e of experiences; track e.role + e.org) {
+      <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <p class="text-sm text-zinc-400">{{ e.period }}</p>
+            <p class="mt-1 text-lg font-semibold">{{ e.role }}</p>
+            <p class="text-sm text-zinc-300">{{ e.org }}</p>
+          </div>
+          <div class="rounded-2xl bg-black/20 px-4 py-2 ring-1 ring-white/10 text-sm text-zinc-300">
+            Highlights
+          </div>
+        </div>
+
+        <ul class="mt-4 grid gap-2 text-sm text-zinc-300 md:grid-cols-2">
+          @for (b of e.bullets; track b) {
+            <li class="flex gap-2">
+              <span class="mt-1 size-1.5 shrink-0 rounded-full bg-indigo-300/80"></span>
+              <span>{{ b }}</span>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+  </div>
+</section>

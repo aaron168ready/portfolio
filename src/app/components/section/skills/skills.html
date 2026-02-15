@@ -1,0 +1,53 @@
+<section id="skills" class="mx-auto max-w-6xl px-4 py-14">
+  <div class="grid gap-8 lg:grid-cols-3">
+    <div class="lg:col-span-1">
+      <h2 class="text-2xl font-semibold tracking-tight">Skills & focus</h2>
+      <p class="mt-2 text-zinc-300">
+        I optimize for developer experience, performance, and design consistency — so teams ship
+        faster with fewer regressions.
+      </p>
+
+      <div class="mt-6 rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+        <p class="text-sm font-semibold">What you’ll get</p>
+        <ul class="mt-3 grid gap-2 text-sm text-zinc-300">
+          <li class="flex gap-2">
+            <span class="mt-1 size-1.5 rounded-full bg-emerald-300/80"></span>Reusable UI patterns +
+            design tokens
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 size-1.5 rounded-full bg-emerald-300/80"></span>Clean architecture &
+            testable code
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 size-1.5 rounded-full bg-emerald-300/80"></span>Performance +
+            accessibility pass
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 size-1.5 rounded-full bg-emerald-300/80"></span>CI/CD friendly
+            workflows
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lg:col-span-2">
+      <div class="grid gap-4 md:grid-cols-2">
+        @for (group of skills; track group.title) {
+          <div class="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10">
+            <p class="font-semibold">{{ group.title }}</p>
+            <p class="mt-1 text-sm text-zinc-300">{{ group.desc }}</p>
+            <div class="mt-4 flex flex-wrap gap-2">
+              @for (s of group.items; track s) {
+                <span
+                  class="rounded-full bg-black/25 px-3 py-1 text-xs text-zinc-300 ring-1 ring-white/10"
+                >
+                  {{ s }}
+                </span>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<div class="flex items-center gap-x-2 text-sm">
+  <div
+    class="inline-flex size-2 rounded-full"
+    [class.bg-emerald-400]="status() === 'available'"
+    [class.bg-amber-400]="status() === 'busy'"
+    [class.bg-gray-400]="status() === 'unavailable'"
+  ></div>
+  {{ statusMessage() }}
+</div>
