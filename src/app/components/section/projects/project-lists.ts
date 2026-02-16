@@ -21,21 +21,18 @@ export const projects: Project[] = [
       'Enterprise',
     ],
     href: '/demo/ag-grid',
-    repo: '#',
   },
   {
     title: 'Design Token Generation Pipeline (Nx + Tailwind CLI)',
     desc: 'Streamlined design token generation using TailwindCSS CLI and Nx, cutting maintenance time by ~90% and improving token accuracy.',
     tags: ['TailwindCSS CLI', 'Nx', 'Typescript', 'Design Tokens', 'Automation'],
     href: '#',
-    repo: '#',
   },
   {
     title: 'Playwright E2E Fixture Framework',
     desc: 'Standardized end-to-end testing with Playwright fixtures to reduce duplication and improve test stability by ~90%.',
     tags: ['Playwright', 'E2E', 'Fixtures', 'Test Stability'],
     href: '#',
-    repo: '#',
   },
   {
     title: 'Kafka-Driven Batch Modernization',
@@ -50,14 +47,12 @@ export const projects: Project[] = [
       'ELK Stack',
     ],
     href: '#',
-    repo: '#',
   },
   {
     title: 'Micro-Frontend Migration (Module Federation)',
     desc: 'Migrated a large monolithic frontend into a framework-agnostic micro-frontend architecture using Webpack Module Federation and micro-frontend state management.',
     tags: ['Angular', 'React', 'Module Federation', 'Microfrontends', 'Webpack', 'Redux'],
-    href: '#',
-    repo: '#',
+    repo: 'https://github.com/aaron168ready/portfolio',
   },
   {
     title: 'Form UI Component Management Dashboard',
