@@ -9,6 +9,14 @@
         </span>
       </span>
       <span class="font-semibold tracking-tight">Aaron Ni</span>
+
+      @if (environment() === 'dev') {
+        <span
+          class="rounded-full bg-emerald-500/15 px-3 py-1 text-xs text-emerald-200 ring-1 ring-emerald-500/30"
+        >
+          DEV
+        </span>
+      }
     </button>
 
     <nav class="hidden items-center gap-4 text-sm text-zinc-300 md:flex">
