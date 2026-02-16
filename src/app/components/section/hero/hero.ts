@@ -13,7 +13,7 @@ import { RouterService } from '../../../services/router.service';
 export class HeroComponent {
   #routerService = inject(RouterService);
 
-  status: EmploymentStatus = 'available';
+  status: EmploymentStatus = 'busy';
   resumeUrl = '/assets/resume.pdf';
   heroChips = [
     'Angular 20',
