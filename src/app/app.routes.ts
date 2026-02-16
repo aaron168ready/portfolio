@@ -7,6 +7,10 @@ export const routes: Routes = [
     component: PortfolioLandingComponent,
   },
   {
+    path: 'demo/ag-grid',
+    loadComponent: () => import('./pages/demo/ag-grid-demo').then((m) => m.AgGridDemoComponent),
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Project, projects } from '../../../pages/landing/projects';
+import { Project, projects } from './project-lists';
 import { DynamicIconDirective } from '../../../directives/dynamic-icon/dynamic-icon';
 import { CommonModule } from '@angular/common';
 

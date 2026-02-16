@@ -20,7 +20,7 @@ export const projects: Project[] = [
       'Component Library',
       'Enterprise',
     ],
-    href: '#',
+    href: '/demo/ag-grid',
     repo: '#',
   },
   {
