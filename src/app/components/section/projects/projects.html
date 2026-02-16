@@ -3,12 +3,15 @@
     <div>
       <h2 class="text-2xl font-semibold tracking-tight">Featured projects</h2>
       <p class="mt-2 text-zinc-300">
-        A few things I’ve built recently — focused on real UX and maintainable architecture.
+        A few things I've built recently — focused on real UX and maintainable architecture.
       </p>
     </div>
-    <a class="hidden text-sm text-zinc-300 hover:text-white transition md:inline" href="#contact"
-      >Need something similar? →</a
+    <button
+      class="hidden text-sm text-zinc-300 hover:text-white transition md:inline"
+      (click)="routeTo('#contact')"
     >
+      Need something similar? →
+    </button>
   </div>
 
   <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -42,20 +45,20 @@
         @if (p.href || p.repo) {
           <div class="mt-auto mb-0 pt-5 flex items-center gap-3 text-sm">
             @if (p.href) {
-                <button
-                  class="inline-flex items-center gap-1 text-zinc-200 hover:text-white hover:cursor-pointer transition"
-                  (click)="renderDemo(p.href)"
-                >
-                  Live Demo<span>→</span>
-                </button>
+              <button
+                class="inline-flex items-center gap-1 text-zinc-200 hover:text-white hover: transition"
+                (click)="renderDemo(p.href)"
+              >
+                Live Demo<span>→</span>
+              </button>
             }
             @if (p.repo) {
-              <a
+              <button
                 class="inline-flex items-center gap-1 text-zinc-400 hover:text-white transition"
-                [href]="p.repo || '#'"
+                (click)="routeTo(p.repo || '#')"
               >
                 <i dynamic-icon iconName="github"></i>
-              </a>
+              </button>
             }
           </div>
         }

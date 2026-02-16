@@ -14,3 +14,7 @@
   --surface-background-fuchsia: color-mix(in oklab, var(--color-fuchsia-500) 10%, transparent);
   --surface-background-cyan: color-mix(in oklab, var(--color-cyan-500) 10%, transparent);
 }
+
+button {
+  @apply cursor-pointer;
+}

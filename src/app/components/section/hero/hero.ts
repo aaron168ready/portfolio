@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   EmploymentStatusComponent,
   EmploymentStatus,
 } from '../../employment-status/employment-status';
+import { RouterService } from '../../../services/router.service';
 
 @Component({
   selector: 'app-hero',
@@ -10,6 +11,8 @@ import {
   templateUrl: 'hero.html',
 })
 export class HeroComponent {
+  #routerService = inject(RouterService);
+
   status: EmploymentStatus = 'available';
   resumeUrl = '/assets/resume.pdf';
   heroChips = [
@@ -46,4 +49,6 @@ export class HeroComponent {
     { value: 'CI/CD', label: 'Automated testing + release pipelines' },
     { value: 'Playwright', label: 'Streamlined E2E testing' },
   ];
+
+  routeTo = (href: string) => this.#routerService.routeTo(href);
 }
