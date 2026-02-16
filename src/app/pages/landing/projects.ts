@@ -63,7 +63,5 @@ export const projects: Project[] = [
     title: 'Form UI Component Management Dashboard',
     desc: 'Built an Angular dashboard to manage 800+ specialized form components with complex relationships, powered with reactive forms to handle dynamic interactions and validation.',
     tags: ['Angular', 'Reactive Form', 'Dashboard', 'UI Components'],
-    href: '#',
-    repo: '#',
   },
 ];

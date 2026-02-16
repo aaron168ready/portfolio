@@ -1,5 +1,5 @@
 import { Component, input, signal } from '@angular/core';
-import { DynamicIconDirective } from '../../../directives/icon/dynamic-icon';
+import { DynamicIconDirective } from '../../../directives/dynamic-icon/dynamic-icon';
 
 @Component({
   selector: 'app-header',

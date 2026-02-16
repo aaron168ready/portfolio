@@ -39,20 +39,26 @@
         </div>
 
         <!-- Actions -->
-        <div class="mt-auto mb-0 pt-5 flex items-center gap-3 text-sm">
-          <a
-            class="inline-flex items-center gap-1 text-zinc-200 hover:text-white transition"
-            [href]="p.href || '#contact'"
-          >
-            Live Demo<span>→</span>
-          </a>
-          <a
-            class="inline-flex items-center gap-1 text-zinc-400 hover:text-white transition"
-            [href]="p.repo || '#'"
-          >
-            <i dynamic-icon iconName="github"></i>
-          </a>
-        </div>
+        @if (p.href || p.repo) {
+          <div class="mt-auto mb-0 pt-5 flex items-center gap-3 text-sm">
+            @if (p.href) {
+              <a
+                class="inline-flex items-center gap-1 text-zinc-200 hover:text-white transition"
+                [href]="p.href || '#contact'"
+              >
+                Live Demo<span>→</span>
+              </a>
+            }
+            @if (p.repo) {
+              <a
+                class="inline-flex items-center gap-1 text-zinc-400 hover:text-white transition"
+                [href]="p.repo || '#'"
+              >
+                <i dynamic-icon iconName="github"></i>
+              </a>
+            }
+          </div>
+        }
       </article>
     }
   </div>
