@@ -32,7 +32,6 @@ export const projects: Project[] = [
     title: 'Playwright E2E Fixture Framework',
     desc: 'Standardized end-to-end testing with Playwright fixtures to reduce duplication and improve test stability by ~90%.',
     tags: ['Playwright', 'E2E', 'Fixtures', 'Test Stability'],
-    href: '#',
   },
   {
     title: 'Kafka-Driven Batch Modernization',
@@ -52,7 +51,6 @@ export const projects: Project[] = [
     title: 'Micro-Frontend Migration (Module Federation)',
     desc: 'Migrated a large monolithic frontend into a framework-agnostic micro-frontend architecture using Webpack Module Federation and micro-frontend state management.',
     tags: ['Angular', 'React', 'Module Federation', 'Microfrontends', 'Webpack', 'Redux'],
-    repo: 'https://github.com/aaron168ready/portfolio',
   },
   {
     title: 'Form UI Component Management Dashboard',

@@ -44,7 +44,12 @@
         <!-- Actions -->
         @if (p.href || p.repo) {
           <div class="mt-auto mb-0 pt-5 flex items-center gap-3 text-sm">
-            @if (p.href) {
+            @if (p.href === '#') {
+              <span class="inline-flex items-center gap-1 text-zinc-500 cursor-not-allowed">
+                Demo in the works
+              </span>
+            }
+            @if (p.href && p.href !== '#') {
               <button
                 class="inline-flex items-center gap-1 text-zinc-200 hover:text-white hover: transition"
                 (click)="renderDemo(p.href)"

@@ -14,7 +14,7 @@ export class DemoService {
       const s = document.createElement('style');
       s.id = 'demo-overlay-styles';
       s.textContent = `
-        #top.demo-slide-left { transform: translateX(-100%); transition: transform 400ms ease; }
+        #landing-main.demo-slide-left { transform: translateX(-100%); transition: transform 400ms ease; }
         #demo-overlay { position: fixed; inset: 0; pointer-events: none; z-index: 10000; }
         #demo-container { position: absolute; top: 0; right: 0; width: 100%; max-width: 100%; height: 100%; transform: translateX(100%); transition: transform 400ms ease; pointer-events: auto; background: rgba(2,6,23,0.95); display: flex; flex-direction: column; }
         #demo-container.demo-in { transform: translateX(0); }
