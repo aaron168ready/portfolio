@@ -1,7 +1,9 @@
 import { Component, input, signal } from '@angular/core';
+import { DynamicIconDirective } from '../../../directives/icon/dynamic-icon';
 
 @Component({
   selector: 'app-header',
+  imports: [DynamicIconDirective],
   standalone: true,
   templateUrl: 'header.html',
 })

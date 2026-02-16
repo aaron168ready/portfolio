@@ -1,0 +1,14 @@
+<footer
+  class="flex flex-col mt-10 mx-auto max-w-6xl items-start justify-center gap-3 border-t border-white/10 pt-6 text-sm text-zinc-400 md:flex-row md:items-center px-4 pb-16"
+>
+  <p>© {{ year }} Aaron Ni. Built with Angular 20 + TailwindCSS 4.</p>
+  <div class="flex gap-4">
+    <a class="hover:text-white transition" [href]="linkedinUrl()" target="_blank" rel="noreferrer"
+      ><i dynamic-icon iconName="linkedin"></i>
+    </a>
+    <a class="hover:text-white transition" [href]="githubUrl()" target="_blank" rel="noreferrer"
+      ><i dynamic-icon iconName="github"></i>
+    </a>
+    <a class="hover:text-white transition" href="#top">Back to top</a>
+  </div>
+</footer>

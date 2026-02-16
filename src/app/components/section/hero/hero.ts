@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { EmploymentStatus, EmploymentStatusType } from '../../employment-status/employment-status';
+import {
+  EmploymentStatusComponent,
+  EmploymentStatus,
+} from '../../employment-status/employment-status';
 
 @Component({
   selector: 'app-hero',
-  imports: [EmploymentStatus],
+  imports: [EmploymentStatusComponent],
   templateUrl: 'hero.html',
 })
 export class HeroComponent {
-  status: EmploymentStatusType = 'busy';
+  status: EmploymentStatus = 'available';
   resumeUrl = '/assets/resume.pdf';
   heroChips = [
     'Angular 20',
@@ -28,7 +31,7 @@ export class HeroComponent {
       desc: 'Accessible, themed components with tokens + variants.',
       badge: 'UI',
     },
-    { title: 'Monorepo tooling', desc: 'Nx patterns for scaling apps, libs, and CI.', badge: 'DX' },
+    { title: 'Monorepo tooling', desc: 'Nx patterns for scaling apps, libs, and CI.', badge: 'Nx' },
     {
       title: 'Full-stack delivery',
       desc: 'API design, auth, DB modeling, deployment.',

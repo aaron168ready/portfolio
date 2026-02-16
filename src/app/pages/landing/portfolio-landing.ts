@@ -4,7 +4,8 @@ import { HeroComponent } from '../../components/section/hero/hero';
 import { ContactComponent } from '../../components/section/contact/contact';
 import { SkillsComponent } from '../../components/section/skills/skills';
 import { ExperiencesComponent } from '../../components/section/experiences/experiences';
-import { BackgroundComponent } from '../../components/section/projects/projects';
+import { ProjectsComponent } from '../../components/section/projects/projects';
+import { FooterComponent } from '../layout/footer/footer';
 
 @Component({
   selector: 'app-portfolio-landing',
@@ -15,7 +16,8 @@ import { BackgroundComponent } from '../../components/section/projects/projects'
     ContactComponent,
     SkillsComponent,
     ExperiencesComponent,
-    BackgroundComponent,
+    ProjectsComponent,
+    FooterComponent,
   ],
   templateUrl: 'portfolio-landing.html',
 })

@@ -1,13 +1,13 @@
-import { Component, computed, input, InputSignal, signal } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 
-export type EmploymentStatusType = 'available' | 'unavailable' | 'busy';
+export type EmploymentStatus = 'available' | 'unavailable' | 'busy';
 
 @Component({
   selector: 'app-employment-status',
   templateUrl: 'employment-status.html',
 })
-export class EmploymentStatus {
-  status = input<EmploymentStatusType>('available');
+export class EmploymentStatusComponent {
+  status = input<EmploymentStatus>('available');
   statusMessage = computed(() => {
     switch (this.status()) {
       case 'available':
