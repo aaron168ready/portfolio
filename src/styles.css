@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
+@reference './tailwind.config.css';
+
+:root {
+  --accent-primary-background: var(--accent-primary);
+  --surface-background-indigo: color-mix(in oklab, var(--color-indigo-500) 20%, transparent);
+  --surface-background-fuchsia: color-mix(in oklab, var(--color-fuchsia-500) 10%, transparent);
+  --surface-background-cyan: color-mix(in oklab, var(--color-cyan-500) 10%, transparent);
+}
+
+[data-theme='dark'] {
+  --surface-background-indigo: color-mix(in oklab, var(--color-indigo-500) 20%, transparent);
+  --surface-background-fuchsia: color-mix(in oklab, var(--color-fuchsia-500) 10%, transparent);
+  --surface-background-cyan: color-mix(in oklab, var(--color-cyan-500) 10%, transparent);
+}

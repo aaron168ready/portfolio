@@ -42,12 +42,12 @@
         @if (p.href || p.repo) {
           <div class="mt-auto mb-0 pt-5 flex items-center gap-3 text-sm">
             @if (p.href) {
-              <a
-                class="inline-flex items-center gap-1 text-zinc-200 hover:text-white transition"
-                [href]="p.href || '#contact'"
-              >
-                Live Demo<span>→</span>
-              </a>
+                <button
+                  class="inline-flex items-center gap-1 text-zinc-200 hover:text-white hover:cursor-pointer transition"
+                  (click)="renderDemo(p.href)"
+                >
+                  Live Demo<span>→</span>
+                </button>
             }
             @if (p.repo) {
               <a

@@ -1,0 +1,5 @@
+@theme static {
+  --color-surface-background-indigo: var(--surface-background-indigo);
+  --color-surface-background-fuchsia: var(--surface-background-fuchsia);
+  --color-surface-background-cyan: var(--surface-background-cyan);
+}
