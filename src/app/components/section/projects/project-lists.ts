@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title: 'RestaurantOS Dashboard',
     desc: 'Developed a full-stack restaurant management dashboard with Angular frontend and Java Spring Boot backend, featuring real-time order tracking, inventory management, and analytics.',
     tags: ['Angular', 'Tailwind CSS', 'Java', 'Spring Boot', 'PostgreSQL', 'Supabase'],
-    href: 'http://restaurantos-demo.aaron-ni.com',
+    href: 'https://restaurantos-demo.aaron-ni.com',
   },
   {
     title: 'Design Token Generation Pipeline (Nx + Tailwind CLI)',
