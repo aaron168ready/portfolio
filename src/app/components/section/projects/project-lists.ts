@@ -23,15 +23,16 @@ export const projects: Project[] = [
     href: '/demo/ag-grid',
   },
   {
+    title: 'RestaurantOS Dashboard',
+    desc: 'Developed a full-stack restaurant management dashboard with Angular frontend and Java Spring Boot backend, featuring real-time order tracking, inventory management, and analytics.',
+    tags: ['Angular', 'Tailwind CSS', 'Java', 'Spring Boot', 'PostgreSQL', 'Supabase'],
+    href: 'http://restaurantos-demo.aaron-ni.com',
+  },
+  {
     title: 'Design Token Generation Pipeline (Nx + Tailwind CLI)',
     desc: 'Streamlined design token generation using TailwindCSS CLI and Nx, cutting maintenance time by ~90% and improving token accuracy.',
     tags: ['TailwindCSS CLI', 'Nx', 'Typescript', 'Design Tokens', 'Automation'],
     href: '#',
-  },
-  {
-    title: 'Playwright E2E Fixture Framework',
-    desc: 'Standardized end-to-end testing with Playwright fixtures to reduce duplication and improve test stability by ~90%.',
-    tags: ['Playwright', 'E2E', 'Fixtures', 'Test Stability'],
   },
   {
     title: 'Kafka-Driven Batch Modernization',
