@@ -23,9 +23,9 @@ export const projects: Project[] = [
     href: '/demo/ag-grid',
   },
   {
-    title: 'Restaurant Dashboard',
-    desc: 'Developed a full-stack restaurant management dashboard with React frontend and Java Spring Boot backend, featuring real-time order tracking, order management, and checkout.',
-    tags: ['React', 'Axios', 'React Query', 'Tailwind CSS', 'Java', 'Spring Boot'],
+    title: 'Restaurant Order App',
+    desc: 'Developed a full-stack restaurant order app with React frontend and Java Spring Boot backend, featuring real-time order tracking, order management, and checkout.',
+    tags: ['React', 'Axios', 'React Query', 'Tailwind CSS', 'Docker', 'Java', 'Spring Boot'],
     href: 'https://restaurantreactapp.pages.dev',
   },
   {
