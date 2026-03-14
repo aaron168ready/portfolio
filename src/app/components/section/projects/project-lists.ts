@@ -23,10 +23,10 @@ export const projects: Project[] = [
     href: '/demo/ag-grid',
   },
   {
-    title: 'RestaurantOS Dashboard',
-    desc: 'Developed a full-stack restaurant management dashboard with Angular frontend and Java Spring Boot backend, featuring real-time order tracking, inventory management, and analytics.',
-    tags: ['Angular', 'Tailwind CSS', 'Java', 'Spring Boot', 'PostgreSQL', 'Supabase'],
-    href: 'https://restaurantos-demo.aaron-ni.com',
+    title: 'Restaurant Dashboard',
+    desc: 'Developed a full-stack restaurant management dashboard with React frontend and Java Spring Boot backend, featuring real-time order tracking, order management, and checkout.',
+    tags: ['React', 'Axios', 'React Query', 'Tailwind CSS', 'Java', 'Spring Boot'],
+    href: 'https://restaurantreactapp.pages.dev',
   },
   {
     title: 'Design Token Generation Pipeline (Nx + Tailwind CLI)',
