@@ -1,4 +1,87 @@
-<div class="flex h-screen flex-col">
+<!-- <div class="flex h-screen flex-col">
   <app-background></app-background>
   <router-outlet></router-outlet>
+</div> -->
+
+<div class="mx-auto max-w-3xl p-4 sm:p-6">
+  <div class="mb-4">
+    <h1 class="text-2xl font-semibold tracking-tight">Most Common Behavioral Questions</h1>
+    <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+      Click a question to expand/collapse your prepared bullets and stories.
+    </p>
+  </div>
+
+  <div class="space-y-3">
+    <div
+      *ngFor="let item of items"
+      class="rounded-2xl border border-gray-200 bg-white shadow-sm transition dark:border-gray-800 dark:bg-gray-950"
+    >
+      <button
+        type="button"
+        class="flex w-full items-center justify-between gap-3 px-4 py-4 text-left"
+        (click)="toggle(item.id)"
+        [attr.aria-expanded]="isOpen(item.id)"
+        [attr.aria-controls]="item.id + '-panel'"
+      >
+        <div class="min-w-0">
+          <div class="truncate text-base font-medium text-gray-900 dark:text-gray-100">
+            {{ item.title }}
+          </div>
+        </div>
+
+        <span
+          class="grid h-8 w-8 place-items-center rounded-full border border-gray-200 bg-gray-50 text-gray-700 transition dark:border-gray-800 dark:bg-gray-900 dark:text-gray-200"
+          [class.rotate-180]="isOpen(item.id)"
+        >
+          <!-- chevron -->
+          <svg viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.24a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </button>
+
+      <!-- Animated panel (no height:auto animation pain) -->
+      <div
+        [id]="item.id + '-panel'"
+        class="grid transition-[grid-template-rows] duration-300 ease-in-out"
+        [class.grid-rows-[0fr]]="!isOpen(item.id)"
+        [class.grid-rows-[1fr]]="isOpen(item.id)"
+      >
+        <div class="overflow-hidden">
+          <div
+            class="border-t border-gray-200 px-4 py-4 text-sm text-gray-800 dark:border-gray-800 dark:text-gray-200"
+          >
+            <div class="space-y-4">
+              <ng-container *ngFor="let s of item.sections">
+                <div>
+                  <div
+                    *ngIf="s.heading"
+                    class="mb-2 font-semibold text-gray-900 dark:text-gray-100"
+                  >
+                    {{ s.heading }}
+                  </div>
+
+                  <div *ngIf="s.paragraphs?.length" class="space-y-2">
+                    <p *ngFor="let p of s.paragraphs" class="leading-relaxed">
+                      {{ p }}
+                    </p>
+                  </div>
+
+                  <ul *ngIf="s.bullets?.length" class="mt-2 list-disc space-y-1 pl-5">
+                    <li *ngFor="let b of s.bullets" class="leading-relaxed">
+                      {{ b }}
+                    </li>
+                  </ul>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
